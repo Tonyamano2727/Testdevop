@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'trongpham99/golang-jenkins'
+        DOCKER_IMAGE = 'tonne/testbai'
         DOCKER_TAG = 'latest'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'master', url: 'https://github.com/trongpham99-cpu/golang-jenkins.git'
+                git branch: 'master', url: 'https://github.com/Tonyamano2727/Testdevop.git'
             }
         }
 
